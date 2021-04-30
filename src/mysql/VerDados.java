@@ -24,6 +24,7 @@ public class VerDados {
             System.out.println("===DADOS DA TABELA===");
 
             while (rs.next()){
+                System.out.println("Id: " + rs.getInt("id"));
                 System.out.println("Email: " + rs.getString("email"));
             }
 
