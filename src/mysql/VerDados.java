@@ -7,6 +7,7 @@ import java.sql.Statement;
 import conexao.IniciarConexao;
 
 import conexao.ExcessaoBanco;
+import conexao.FecharResultSet;
 import conexao.FecharStatement;
 
 public class VerDados {
@@ -30,6 +31,7 @@ public class VerDados {
             throw new ExcessaoBanco(e.getMessage());
         } finally {
             FecharStatement.fecharStatement(state);
+            FecharResultSet.fecharStatement(rs);
         }
     }
 

@@ -12,7 +12,7 @@ public class IniciarConexao {
         if (conexao == null){
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                String url = "jdbc:mysql://localhost:3306/cadastro";
+                String url = "jdbc:mysql://localhost:3306/login";
                 conexao = DriverManager.getConnection(url, "junior", "password");
                 System.out.println("Conexão iniciada!");
             } catch (SQLException | ClassNotFoundException e) {
