@@ -9,6 +9,7 @@ public class FecharConexao {
         if (conexao != null){
             try {
                 conexao.close();
+                System.out.println("Conexão fechada!");
             } catch (SQLException e) {
                 throw new ExcessaoBanco(e.getMessage());
             }

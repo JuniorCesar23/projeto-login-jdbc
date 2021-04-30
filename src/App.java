@@ -1,7 +1,14 @@
+import java.sql.Connection;
+
+import conexao.FecharConexao;
+import conexao.IniciarConexao;
+
 public class App {
     public static void main(String[] args) throws Exception {
        
-        System.out.println("Hello, world!");
+        Connection conexao = IniciarConexao.iniciarConexao();
+
+        FecharConexao.fecharConexao(conexao);
 
     }
 }
