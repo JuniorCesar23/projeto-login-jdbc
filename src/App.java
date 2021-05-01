@@ -10,10 +10,7 @@ public class App {
        
         Connection conexao = IniciarConexao.iniciarConexao();
 
-            VerDados.verDados(conexao);
-
             DeletarDados.deletarDados(conexao);
-
             VerDados.verDados(conexao);
 
         FecharConexao.fecharConexao(conexao);

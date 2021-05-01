@@ -35,7 +35,11 @@ public class DeletarDados {
 
             int linhasAfetadas = state.executeUpdate();
 
-            System.out.println("Deletado com sucesso! linhas afetadas: " + linhasAfetadas);
+            if (linhasAfetadas >= 1){
+                System.out.println("Deletado com sucesso! linhas afetadas: " + linhasAfetadas);
+            } else if (linhasAfetadas == 0){
+                System.out.println("ERRO! Dado não encontrado!");
+            }
 
         } 
         catch (Exception e) {
