@@ -4,6 +4,7 @@
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/home/jr-cesar/Downloads/mysql-connector-java_8.0.23-1ubuntu20.10_all/usr/share/java/mysql-connector-java-8.0.23.jar"
+        "/home/jr-cesar/Downloads/mysql-connector-java_8.0.23-1ubuntu20.10_all/usr/share/java/mysql-connector-java-8.0.23.jar",
+        "/home/oem/programação/mysql-connector/mysql-connector-java_8.0.24-1ubuntu21.04_all/usr/share/java/mysql-connector-java-8.0.24.jar"
     ]
 }

@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class FecharResultSet {
     
-    public static void fecharStatement(ResultSet rs){
+    public static void fecharResultSet(ResultSet rs){
         if (rs != null){
             try {
                 rs.close();

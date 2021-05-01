@@ -2,7 +2,6 @@ import java.sql.Connection;
 
 import conexao.FecharConexao;
 import conexao.IniciarConexao;
-import mysql.InserirDados;
 import mysql.VerDados;
 
 public class App {

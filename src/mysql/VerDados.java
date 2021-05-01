@@ -32,7 +32,7 @@ public class VerDados {
             throw new ExcessaoBanco(e.getMessage());
         } finally {
             FecharStatement.fecharStatement(state);
-            FecharResultSet.fecharStatement(rs);
+            FecharResultSet.fecharResultSet(rs);
         }
     }
 
